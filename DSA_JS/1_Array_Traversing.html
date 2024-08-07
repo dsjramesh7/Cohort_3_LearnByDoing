@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1.0, initial-scale=1.0" />
+    <title>Array_Traversing</title>
+    <script>
+      let data = [1, 4, 7, 23, 45, 12, 11, 67, 90, 34, 108, 15, 56, 65, 66, 73];
+      for (let i = 0; i < data.length; i++) {
+        document.write(`${data[i]} `);
+      }
+
+      function getElementFunc() {
+        let Iel = document.getElementById("inputId").value;
+        if (Iel < data.length && typeof parseInt(Iel) === Number && Iel < 0) {
+          alert(data[Iel]);
+        } else {
+          alert("Enter valid index to print the element present in array");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <input type="text" id="inputId" />
+    <button onclick="getElementFunc()">Get element</button>
+  </body>
+</html>
