@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/*
+
+Style our app according to the provided design!
+
+green color -> #5f9341
+
+*/
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  border: 1px solid #5f9341;
+  padding: 8px 5px;
+  width: 400px;
+}
+
+button {
+  background: #5f9341;
+  color: white;
+  border: none;
+  padding: 8px 5px;
+  width: 200px;
+}
